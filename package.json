@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "start": "nodemon src/run.js"
+  },
+  "dependencies": {
+    "axois": "^0.0.1-security",
+    "dotenv": "^16.4.6",
+    "grammy": "^1.32.0",
+    "nodemon": "^3.1.7",
+    "pg": "^8.13.1"
+  }
+}
