@@ -6,5 +6,4 @@ module.exports = async (ctx) => {
     const region = ctx.callbackQuery.data
 
     await saveUserQuery(telegram_id, name, region)
-    await ctx.reply('Malumotlar saqlandi!')
 }
