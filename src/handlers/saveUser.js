@@ -9,7 +9,4 @@ module.exports = async (ctx) => {
 
     await saveUserQuery(telegram_id, name, region)
     await ctx.reply("✅ Viloyat tanlandi\n⭐ Marhamat botdan foydalaning", { reply_markup: menuBtn })
-
-    const message_to_channel = `🤖 NAMOZ VAQTLARI BOT\n\n🆔 Telegram id: ${telegram_id}\n🥷 Name: ${name}\n🗺️ Region: ${region}\n\n#namozvaqtlari`
-    await ctx.api.sendMessage(process.env.CHANNEL_ID || "", message_to_channel)
 }
