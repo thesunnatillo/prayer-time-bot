@@ -6,11 +6,13 @@ const getToday = require("./handlers/today")
 const getWeek = require("./handlers/weekly")
 const botInfo = require("./handlers/bot_info")
 const getUsersCount = require("../src/handlers/users_count")
+const regions = require("../src/handlers/regions")
 
 const dispatcher = new Composer();
 
 dispatcher.command('start', startHandler)
 dispatcher.command('help', helpHandler)
+dispatcher.command('region', regions)
 dispatcher.command('stat', getUsersCount)
 dispatcher.hears('📆 Bugun', getToday)
 dispatcher.hears('🗓 Haftalik', getWeek)
