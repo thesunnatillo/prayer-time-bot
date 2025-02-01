@@ -7,7 +7,7 @@ const getWeek = require("./handlers/weekly")
 const botInfo = require("./handlers/bot_info")
 const getUsersCount = require("../src/handlers/users_count")
 const regions = require("../src/handlers/regions")
-const qadaBtn = require("../src/handlers/qada-prayer")
+// const qadaBtn = require("../src/handlers/qada-prayer")
 const qadaCount = require("./handlers/qada-count")
 
 const dispatcher = new Composer();

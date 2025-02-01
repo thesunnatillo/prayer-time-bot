@@ -11,10 +11,15 @@ module.exports = async (ctx) => {
 📅 ${data.weekday}
 
 🌅 Bomdod: ${data.times.tong_saharlik}
+
 ☀️ Quyosh: ${data.times.quyosh}
+
 🕌 Peshin: ${data.times.peshin}
+
 🌇 Asr: ${data.times.asr}
+
 🌆 Shom: ${data.times.shom_iftor}
+
 🌙 Xufton: ${data.times.hufton}
 `;
 
