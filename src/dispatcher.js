@@ -9,6 +9,7 @@ const getUsersCount = require("../src/handlers/users_count")
 const regions = require("../src/handlers/regions")
 // const qadaBtn = require("../src/handlers/qada-prayer")
 const qadaCount = require("./handlers/qada-count")
+const dadu = require("./handlers/send_msg")
 
 const dispatcher = new Composer();
 
@@ -16,6 +17,7 @@ dispatcher.command('start', startHandler)
 dispatcher.command('help', helpHandler)
 dispatcher.command('region', regions)
 dispatcher.command('stat', getUsersCount)
+dispatcher.command('dadu', dadu)
 dispatcher.hears('📆 Bugun', getToday)
 dispatcher.hears('🗓 Haftalik', getWeek)
 // dispatcher.hears('‼️ Qazo namozlar', qadaBtn)

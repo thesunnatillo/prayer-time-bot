@@ -6,7 +6,7 @@ const dispatcher = require("./dispatcher");
 const bot = new Bot(process.env.BOT_TOKEN);
 
 function initial() {
-    return { bomdod: 0, peshin: 0, asr: 0, shom: 0, xufton: 0 };
+    return { bomdod: 0, peshin: 0, asr: 0, shom: 0, xufton: 0,  state: "" };
   }
 
 bot.use(session({ initial }));
