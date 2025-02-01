@@ -19,5 +19,7 @@ bot.api.setMyCommands([
 
 bot.use(dispatcher);
 
-bot.start();
+bot.start().then(() => {
+  console.log("Bot is up and running");
+});
 createTable()

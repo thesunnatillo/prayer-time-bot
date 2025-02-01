@@ -8,6 +8,7 @@ module.exports = async (ctx) => {
 
     const message = `
 🗺️ Viloyat: ${data.region}
+
 📅 ${data.weekday}
 
 🌅 Bomdod: ${data.times.tong_saharlik}
