@@ -3,7 +3,7 @@ require("dotenv").config();
 
 module.exports = async (ctx) => {
     try {
-        const admin_msg = ctx.message.text.split(" ")[1];
+        const admin_msg = ctx.message.text
         if (ctx.from.id == process.env.ADMIN && admin_msg != undefined) {
 
             const ids = await getUsersId();
