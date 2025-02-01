@@ -12,12 +12,12 @@ module.exports = async (ctx) => {
         const times_day = `
 📅 ${day.weekday}
 
-🌅 Bomdod: ${day.times.tong_saharlik}
-☀️ Quyosh: ${day.times.quyosh}
-🕌 Peshin: ${day.times.peshin}
-🌇 Asr: ${day.times.asr}
-🌆 Shom: ${day.times.shom_iftor}
-🌙 Xufton: ${day.times.hufton}
+    🌅 Bomdod: ${day.times.tong_saharlik}
+    ☀️ Quyosh: ${day.times.quyosh}
+    🕌 Peshin: ${day.times.peshin}
+    🌇 Asr: ${day.times.asr}
+    🌆 Shom: ${day.times.shom_iftor}
+    🌙 Xufton: ${day.times.hufton}
 `;
         message += times_day
     }
